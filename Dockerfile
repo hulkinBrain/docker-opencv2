@@ -46,10 +46,10 @@ RUN adduser myuser
 USER myuser
 
 # Add your project repository
-ADD ./Glaucoma /opt/Glaucoma/
-WORKDIR /opt/Glaucoma
+ADD ./app /opt/app/
+WORKDIR /opt/app
 
 # Running a test file
 # Do project related stuff here
 
-CMD python app/test.py
+CMD python test.py
