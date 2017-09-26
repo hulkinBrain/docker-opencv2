@@ -9,6 +9,8 @@ The docker image contains:
 - Pillow
 - Virtualenv
 
+_Please check the requirements.txt for other libraries which get installed while running the Dockerfile_
+
 If you want to add more dependencies, you can make changes to the requirements file
 
 To test the docker image run the following command:
@@ -16,6 +18,7 @@ To test the docker image run the following command:
     docker run -it hulkinbrain/docker-opencv2 bash
     
 And to test the installed libraries, run the following commands after running the above command:
+
 _OpenCV installation is being checked by the following commands_
 
     # python
