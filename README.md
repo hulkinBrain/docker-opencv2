@@ -44,7 +44,9 @@ For example if you want to deploy a Django based webapp using this Docker image,
 
     CMD python manage.py runserver 0.0.0.0:$PORT
     ```
-- **Run the following commands in the CLI to deploy your webapp along with the Dockerimage:**
+- **Push the updated repository to github**
+- **Go to your docker account and create an automatic build by linking your github account and selecting your repository to Docker. Docker will build an image after 2-3 mintues on its own, it the building doesnt start make a small change in the readme.md file. This will trigger the building.**
+- **After the image gets created, Run the following commands in the CLI to deploy your webapp along with the Dockerimage:**
     ```
     heroku container:login
     
