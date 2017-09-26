@@ -1,6 +1,7 @@
 FROM python:2
 MAINTAINER hulkibrain <alevoorsoorya01@gmail.com>
 
+# Installing dependencies for linux installation of opencv
 RUN apt-get update && \
         apt-get install -y \
         build-essential \
@@ -46,6 +47,10 @@ RUN adduser myuser
 USER myuser
 
 # Add your project repository
+# SYNTAX -->   ADD ./yourFolder /someFolder/youFolder
+# The "/someFolder/youFolder" name could be anything, in this example it is /opt/app
+# It could simply be /app or /wookie/chewbacca or anything, change following commands accordingly
+
 ADD ./app /opt/app/
 WORKDIR /opt/app
 
