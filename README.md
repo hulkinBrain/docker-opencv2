@@ -33,9 +33,9 @@ _OpenCV installation is being checked by the following commands_
 ### Extra information for those looking to deploy Docker images for their heroku webapps
 For example if you want to deploy a Django based webapp using this Docker image, follow the below instructions:
 
-- Clone this repository to your local environment
-- Copy your project folder into the cloned repository
-- Change the following lines of the Dockerfile:
+- **Clone this repository to your local environment**
+- **Copy your project folder into the cloned repository**
+- **Change the following lines of the Dockerfile:**
 
     ```ADD ./yourProjectFolder /opt/yourProjectFolder/
     WORKDIR /opt/yourProjectFolder
@@ -44,7 +44,7 @@ For example if you want to deploy a Django based webapp using this Docker image,
 
     CMD python manage.py runserver 0.0.0.0:$PORT
     ```
-- Run the following commands in the CLI to deploy your webapp along with the Dockerimage:
+- **Run the following commands in the CLI to deploy your webapp along with the Dockerimage:**
     ```
     heroku container:login
     
