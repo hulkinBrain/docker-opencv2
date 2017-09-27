@@ -1,4 +1,4 @@
-# Docker image for opencv2 and python
+# Docker image for opencv2, python, numpy, matplotlib and other libraries
 
 **The docker image contains:**
 
