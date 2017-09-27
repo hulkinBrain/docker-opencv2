@@ -28,7 +28,7 @@ _OpenCV installation is being checked by the following commands_
     >>> import cv2
     >>> print cv2.__version__
     2.4.13.3
-<br>
+
 
 ### Extra information for those looking to deploy Docker images for their heroku webapps
 For example if you want to deploy a Django based webapp using this Docker image, follow the below instructions:
@@ -37,7 +37,8 @@ For example if you want to deploy a Django based webapp using this Docker image,
 - **Copy your project folder into the cloned repository**
 - **Change the following lines of the Dockerfile:**
 
-    ```ADD ./yourProjectFolder /opt/yourProjectFolder/
+    ```
+    ADD ./yourProjectFolder /opt/yourProjectFolder/
     WORKDIR /opt/yourProjectFolder
 
     # Assuming yourProjectFolder contains manage.py run the following command to start the server
