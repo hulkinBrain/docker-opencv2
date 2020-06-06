@@ -1,4 +1,4 @@
-FROM python:2
+FROM python:3
 MAINTAINER hulkibrain <alevoorsoorya01@gmail.com>
 
 # Installing dependencies for linux installation of opencv
